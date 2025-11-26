@@ -23,7 +23,6 @@ public class EchoServerHandler extends ChannelInboundHandlerAdapter {
         ByteBuf bb = (ByteBuf) msg;
         bb.markReaderIndex();
         System.out.println("Server received: " + ByteBufUtil.hexDump(bb.readBytes(bb.readableBytes())));
-
         bb.resetReaderIndex();
         ctx.write(msg);
     }

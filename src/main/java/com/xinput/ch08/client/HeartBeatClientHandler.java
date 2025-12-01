@@ -1,4 +1,4 @@
-package com.xinput.ch07.client;
+package com.xinput.ch08.client;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
